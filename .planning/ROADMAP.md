@@ -36,7 +36,13 @@
   4. Usuário instala os 10 plugins community e Templater dispara automaticamente ao criar nota nova em folder mapeado
   5. Usuário abre `_meta/plugins.md` e vê cada um dos 10 plugins documentado com versão atual + status de manutenção + fallback
 
-**Plans:** TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Skeleton de folders + .gitignore + _meta/ docs (autonomous, wave 1)
+- [ ] 01-02-PLAN.md — Windows Registry LongPaths + GitHub repo PRIVADO + git init/remote/push (manual, wave 2)
+- [ ] 01-03-PLAN.md — Instalação de 10 plugins no Obsidian + config Templater/Homepage/obsidian-git (manual, wave 2)
+
 **UI hint:** no
 
 ---
@@ -142,7 +148,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Fundação | 0/? | Not started | - |
+| 1. Fundação | 0/3 | Planned | - |
 | 2. Templates + Schema + Rubric | 0/? | Not started | - |
 | 3. Dashboard + Queries + Tracking | 0/? | Not started | - |
 | 4. Coach + Anti-Alucinação | 0/? | Not started | - |
@@ -182,4 +188,4 @@ Estes constraints derivados da pesquisa aplicam-se durante o planning de cada ph
 
 ---
 
-*Last updated: 2026-04-23 after roadmap creation*
+*Last updated: 2026-04-23 after Phase 1 planning (3 plans defined)*
