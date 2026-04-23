@@ -40,11 +40,16 @@ Receber coaching real e sem achismo — priorização socrática, tracking calib
 
 - **Usuário**: Weslley — já utiliza Obsidian com sucesso em outros projetos, então migração é natural
 - **Inspiração**: Planner físico de Joel Jota (Método da Alta Performance) — imagens em `Imagens Planner/` mostram estrutura mensal → semanal → diária com benchmarks entre cada ciclo
-- **Filosofia do método**:
-  - **5 Pilares da Alta Performance**: Competitividade, Talento, Saúde, Presença, Performance Emocional
+- **Filosofia do método (verificada no planner físico)**:
+  - **5 Pilares da Alta Performance**: Competitividade, Talento, Saúde, Presença, Performance Emocional (cada um com 5 auto-avaliações no Semanário)
   - **10 Categorias da Auto Performance**: Saúde, Família, Trabalho, Dinheiro, Conhecimento, Mente/Emoções, Relacionamentos, Amor/Parceiro, Tempo, Lazer
-  - **Pentagrama**: Talento → Constrói maestria → Competitividade → Desenvolve foco → Presença → Aumenta produtividade → Saúde → Diminui estresse → Performance Emocional → Acelera resultado
-- **Plano aprovado**: `C:\Users\wesll\.claude\plans\use-o-bathc-sempre-distributed-graham.md` — fonte de verdade
+  - **Manhã Intencional**: 10 perguntas canônicas do planner + 3 prioridades fixas
+  - **Resumo do Dia**: 6 reflexões + avaliação textual dos 5 pilares
+- **Autoria de livros — verificado via research** (anti-alucinação interna):
+  - Joel Jota: "100% Presente", "Padrões de Alta Performance", "Ultracorajoso", "O Sucesso é Treinável"
+  - "Cabeça de Campeão" é de **François Ducasse** (Joel fez prefácio da edição brasileira) — NÃO citar como obra do Joel
+  - "Pentagrama da Alta Performance" (Talento → Maestria → Competitividade...) **não foi encontrado no planner físico** — tratar como narrativa auxiliar não-canônica até usuário confirmar fonte
+- **Plano aprovado**: `C:\Users\wesll\.claude\plans\use-o-bathc-sempre-distributed-graham.md` — fonte de verdade para escopo
 - **Dor atual**: usuário preenche o planner físico mas analisar padrões manualmente é fricção; quer que Claude atue como coach real (não só preenchedor)
 - **Princípio anti-achismo**: usuário pediu explicitamente que Claude não invente; só sugira baseado em dados ou livros validados
 
@@ -71,6 +76,15 @@ Receber coaching real e sem achismo — priorização socrática, tracking calib
 | Vault separado de `.planning/` | `.planning` controla projeto GSD, `Vault` é o produto Obsidian | — Pending |
 | Coach com protocolo socrático de 6 passos | Anti-achismo é requisito explícito do usuário | — Pending |
 | Rotinas via `Ativa.md` como ponteiro | Permite trocar rotina editando 1 arquivo | — Pending |
+| **Dashboard decomposto** (Home leve + Semana-Atual + Mes-Atual) | Research: Home único com 6+ blocos Dataview engasga após 1k notas | — Pending (Phase 3) |
+| **Vault NÃO em cloud sync** (OneDrive/iCloud/Dropbox) | Research: corrupção documentada (iCloud duplica arquivos Windows); vault em E:\ local | ✓ Resolvido (path local) |
+| **Backup via obsidian-git → GitHub PRIVADO** | Single-device Windows: git+GitHub privado é o único backup seguro | — Pending (Phase 1) |
+| **Daily frontmatter = single source of truth** | Weekly/monthly = Dataview live. NUNCA duplicar scores (silent drift quebra anti-achismo) | — Pending (Phase 2) |
+| **Anti-alucinação ESTRUTURAL** (Glob+Read em 08-Livros, não só prompt) | Research: LLMs alucinam citações 20%+ mesmo com regra prompt. Filesystem check é o gate real | — Pending (Phase 4) |
+| **Detecção de performative completion** é objetivo do coach | Research: risco comportamental #1 não é abandono, é score inflation e prioridades copy-paste | — Pending (Phase 5) |
+| **Queries Dataview sempre scoped + LIMIT** | Unscoped é #1 causa de freeze no Obsidian (research) | — Pending (Phase 3) |
+| **Dataview 0.5.70 no MVP, Bases futuro** | Bases (core plugin Obsidian 1.9+) ainda não cobre DataviewJS/inline fields; ecossistema assume Dataview | — Pending |
+| **"Cabeça de Campeão" = Ducasse, NÃO Joel Jota** | Research: Joel fez só prefácio. Coach NUNCA citar como obra do Joel. Lesson learned valida anti-alucinação estrutural | ✓ Documentado |
 
 ## Evolution
 
