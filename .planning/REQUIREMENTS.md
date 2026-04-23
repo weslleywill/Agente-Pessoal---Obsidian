@@ -139,20 +139,82 @@ Explicitamente excluído. Documentado para prevenir scope creep.
 
 ## Traceability
 
-Mapeamento requisito → fase. Atualizado durante roadmap creation.
+Mapeamento requisito → fase. Atualizado em roadmap creation (2026-04-23).
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 até FOUND-08 | Phase 1 | Pending |
-| TMPL-01 até TMPL-09 | Phase 2 | Pending |
-| RTN-01 até RTN-05 | Phase 2 | Pending |
-| FRASE-01 até FRASE-04 | Phase 2 | Pending |
-| LIVR-01 até LIVR-04 | Phase 2 | Pending |
-| DASH-01 até DASH-09 | Phase 3 | Pending |
-| TRACK-01 até TRACK-05 | Phase 3 | Pending |
-| COACH-01 até COACH-09 | Phase 4 | Pending |
-| ANAL-01 até ANAL-09 | Phase 5 | Pending |
-| EXTRA-A até EXTRA-J | Phase 6 | Pending |
+| FOUND-01 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Pending |
+| FOUND-03 | Phase 1 | Pending |
+| FOUND-04 | Phase 1 | Pending |
+| FOUND-05 | Phase 1 | Pending |
+| FOUND-06 | Phase 1 | Pending |
+| FOUND-07 | Phase 1 | Pending |
+| FOUND-08 | Phase 1 | Pending |
+| TMPL-01 | Phase 2 | Pending |
+| TMPL-02 | Phase 2 | Pending |
+| TMPL-03 | Phase 2 | Pending |
+| TMPL-04 | Phase 2 | Pending |
+| TMPL-05 | Phase 2 | Pending |
+| TMPL-06 | Phase 2 | Pending |
+| TMPL-07 | Phase 2 | Pending |
+| TMPL-08 | Phase 2 | Pending |
+| TMPL-09 | Phase 2 | Pending |
+| RTN-01 | Phase 2 | Pending |
+| RTN-02 | Phase 2 | Pending |
+| RTN-03 | Phase 2 | Pending |
+| RTN-04 | Phase 2 | Pending |
+| RTN-05 | Phase 2 | Pending |
+| FRASE-01 | Phase 2 | Pending |
+| FRASE-02 | Phase 2 | Pending |
+| FRASE-03 | Phase 2 | Pending |
+| FRASE-04 | Phase 2 | Pending |
+| LIVR-01 | Phase 2 | Pending |
+| LIVR-02 | Phase 2 | Pending |
+| LIVR-03 | Phase 2 | Pending |
+| LIVR-04 | Phase 2 | Pending |
+| DASH-01 | Phase 3 | Pending |
+| DASH-02 | Phase 3 | Pending |
+| DASH-03 | Phase 3 | Pending |
+| DASH-04 | Phase 3 | Pending |
+| DASH-05 | Phase 3 | Pending |
+| DASH-06 | Phase 3 | Pending |
+| DASH-07 | Phase 3 | Pending |
+| DASH-08 | Phase 3 | Pending |
+| DASH-09 | Phase 3 | Pending |
+| TRACK-01 | Phase 3 | Pending |
+| TRACK-02 | Phase 3 | Pending |
+| TRACK-03 | Phase 3 | Pending |
+| TRACK-04 | Phase 3 | Pending |
+| TRACK-05 | Phase 3 | Pending |
+| COACH-01 | Phase 4 | Pending |
+| COACH-02 | Phase 4 | Pending |
+| COACH-03 | Phase 4 | Pending |
+| COACH-04 | Phase 4 | Pending |
+| COACH-05 | Phase 4 | Pending |
+| COACH-06 | Phase 4 | Pending |
+| COACH-07 | Phase 4 | Pending |
+| COACH-08 | Phase 4 | Pending |
+| COACH-09 | Phase 4 | Pending |
+| ANAL-01 | Phase 5 | Pending |
+| ANAL-02 | Phase 5 | Pending |
+| ANAL-03 | Phase 5 | Pending |
+| ANAL-04 | Phase 5 | Pending |
+| ANAL-05 | Phase 5 | Pending |
+| ANAL-06 | Phase 5 | Pending |
+| ANAL-07 | Phase 5 | Pending |
+| ANAL-08 | Phase 5 | Pending |
+| ANAL-09 | Phase 5 | Pending |
+| EXTRA-A | Phase 6 | Pending |
+| EXTRA-B | Phase 6 | Pending |
+| EXTRA-C | Phase 6 | Pending |
+| EXTRA-D | Phase 6 | Pending |
+| EXTRA-E | Phase 6 | Pending |
+| EXTRA-F | Phase 6 | Pending |
+| EXTRA-G | Phase 6 | Pending |
+| EXTRA-H | Phase 6 | Pending |
+| EXTRA-I | Phase 6 | Pending |
+| EXTRA-J | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 72 total
@@ -161,4 +223,4 @@ Mapeamento requisito → fase. Atualizado durante roadmap creation.
 
 ---
 *Requirements defined: 2026-04-23*
-*Last updated: 2026-04-23 after initial definition*
+*Traceability updated: 2026-04-23 after roadmap creation*
