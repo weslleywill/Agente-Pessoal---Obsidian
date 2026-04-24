@@ -62,7 +62,14 @@ Plans:
   4. Usuário abre qualquer dia do ano e vê 1 frase motivacional rotativa distinta (`dayOfYear % length`), com autor + fonte rastreáveis
   5. Usuário preenche 1 daily + 1 weekly + 1 monthly completos em menos de 3 minutos (daily), 15 min (weekly), 30 min (monthly) — templates fiéis ao planner físico sem bloat
 
-**Plans:** TBD
+**Plans:** 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Schema + Rubric + Fields (congelar _meta/ antes de templates; wave 1, autonomous)
+- [ ] 02-02-PLAN.md — Templates diário/semanal/mensal + fragments + Periodic Notes config (wave 2, autonomous)
+- [ ] 02-03-PLAN.md — Rotinas Dia-Util/Fim-Semana/Ativa (ponteiro) + _INDEX (wave 2, autonomous)
+- [ ] 02-04-PLAN.md — Banco de >=50 frases + 3 livros seed com autoria correta + _INDEX (wave 3, autonomous)
+
 **UI hint:** no
 
 ---
@@ -149,7 +156,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fundação | 0/3 | Planned | - |
-| 2. Templates + Schema + Rubric | 0/? | Not started | - |
+| 2. Templates + Schema + Rubric | 0/4 | Planned | - |
 | 3. Dashboard + Queries + Tracking | 0/? | Not started | - |
 | 4. Coach + Anti-Alucinação | 0/? | Not started | - |
 | 5. Análise Semanal/Mensal | 0/? | Not started | - |
@@ -188,4 +195,4 @@ Estes constraints derivados da pesquisa aplicam-se durante o planning de cada ph
 
 ---
 
-*Last updated: 2026-04-23 after Phase 1 planning (3 plans defined)*
+*Last updated: 2026-04-24 after Phase 2 planning (4 plans defined, 22 requirements covered)*
