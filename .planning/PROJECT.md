@@ -57,9 +57,9 @@ Receber coaching real e sem achismo — priorização socrática, tracking calib
 
 - **Plataforma**: Obsidian (Windows 11, vault em `E:\Claude Code\Agente Pessoal - Obsidian\Vault`)
 - **Plugins**: apenas community plugins consolidados — Templater, Dataview, Periodic Notes, Calendar, Tasks, Homepage, Tracker, Pomodoro (a validar no momento da instalação), Natural Language Dates
-- **Controle do projeto**: `.planning/` (GSD) ≠ produto (`Vault/`) — pastas separadas
+- **Controle do projeto**: `.planning/` (GSD) ≠ produto (`Agente Pessoal - Obsidian/`) — pastas separadas
 - **Anti-alucinação (hard rule)**:
-  - Coach nunca cita livro/autor sem arquivo existente em `Vault/08 - Livros/`
+  - Coach nunca cita livro/autor sem arquivo existente em `Agente Pessoal - Obsidian/08 - Livros/`
   - Coach nunca estima tempo com < 3 amostras sem dizer "sem histórico suficiente"
   - Coach para e pergunta se falta dado, nunca chuta
 - **Idioma**: português (PT-BR) — templates, prompts e frases motivacionais

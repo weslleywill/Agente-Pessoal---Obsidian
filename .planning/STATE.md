@@ -44,7 +44,7 @@
 ### Decisões locked (do PROJECT.md e research)
 
 - **Granularidade Coarse** — 6 fases, dependency-driven (do research SUMMARY.md)
-- **Vault separado de `.planning/`** — `.planning` controla projeto GSD, `Vault/` é o produto
+- **Vault separado de `.planning/`** — `.planning` controla projeto GSD, `Agente Pessoal - Obsidian/` é o produto (vault, renomeado de `Vault/`)
 - **Vault NÃO em cloud sync** — E:\ local apenas; backup via obsidian-git → GitHub **privado**
 - **Daily frontmatter = single source of truth** — weekly/monthly = Dataview live, nunca duplicam
 - **Anti-alucinação ESTRUTURAL** — Glob+Read em `08 - Livros/`, não só prompt
