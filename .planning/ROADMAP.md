@@ -89,7 +89,13 @@ Plans:
   4. Usuário digita `/loga 14:00-15:30 revisar relatório` e Claude preenche a seção "Log de Tempo" com formato estruturado (estimado vs real), atualizando `tarefas_log` no frontmatter
   5. Usuário cria vault vazio (Day 0, zero daily notes) e abre dashboard — nenhuma query renderiza erro vermelho; todas mostram empty state com mensagem graciosa
 
-**Plans:** TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Home.md leve (saudação + frase rotativa + HOJE + embed Ativa + links sub-dashboards), wave 1, autonomous
+- [ ] 03-02-PLAN.md — Semana-Atual + Mes-Atual sub-dashboards pesados (Tracker charts + Tasks + agregações), wave 2, autonomous
+- [ ] 03-03-PLAN.md — Tracking infra em _meta/ (calibration seed + time-logging docs + Pomodoro integration), wave 2, autonomous
+
 **UI hint:** yes
 
 ---
@@ -109,7 +115,12 @@ Plans:
   4. Usuário corrige estimativa do coach ("na verdade levou 45min, não 2h") e correção é escrita em `_meta/calibration.md` — na próxima estimativa da mesma tarefa, coach usa o novo dado
   5. Usuário roda `verifica fontes` em análise do coach e recebe re-confirmação de cada citação (path + quote presente). Coach com <3 amostras responde explicitamente "sem histórico suficiente", não chuta. Export público nunca contém conteúdo de `_private/`
 
-**Plans:** TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Home.md leve (saudação + frase rotativa + HOJE + embed Ativa + links sub-dashboards), wave 1, autonomous
+- [ ] 03-02-PLAN.md — Semana-Atual + Mes-Atual sub-dashboards pesados (Tracker charts + Tasks + agregações), wave 2, autonomous
+- [ ] 03-03-PLAN.md — Tracking infra em _meta/ (calibration seed + time-logging docs + Pomodoro integration), wave 2, autonomous
 
 ---
 
@@ -128,7 +139,12 @@ Plans:
   4. Usuário roda `coach mensal` e recebe: evolução mês vs mês anterior, progresso % concreto das Metas 6m/1a (baseado em entregas, não sensação), questão "essa meta ainda faz sentido?"
   5. Coach mostra weekly calibration review: "esta semana você acertou 5 estimativas, subestimou 2 (escrita), superestimou 1" — com diferença quantificada por tipo de tarefa
 
-**Plans:** TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Home.md leve (saudação + frase rotativa + HOJE + embed Ativa + links sub-dashboards), wave 1, autonomous
+- [ ] 03-02-PLAN.md — Semana-Atual + Mes-Atual sub-dashboards pesados (Tracker charts + Tasks + agregações), wave 2, autonomous
+- [ ] 03-03-PLAN.md — Tracking infra em _meta/ (calibration seed + time-logging docs + Pomodoro integration), wave 2, autonomous
 
 ---
 
@@ -147,7 +163,12 @@ Plans:
   4. Usuário clica "exportar benchmark mensal" e recebe PDF formatado em `04 - Benchmarks/PDF/` com scores + temas agregados, SEM raw quotes de reflexões (privacy redact aplicado)
   5. Usuário abre dashboard com 365+ daily notes acumuladas e Home.md ainda renderiza em <1s cold; annual method review roda e coach pergunta sobre campos não preenchidos nos últimos 90 dias; archive flow move daily > 2 anos para `Arquivo/`
 
-**Plans:** TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Home.md leve (saudação + frase rotativa + HOJE + embed Ativa + links sub-dashboards), wave 1, autonomous
+- [ ] 03-02-PLAN.md — Semana-Atual + Mes-Atual sub-dashboards pesados (Tracker charts + Tasks + agregações), wave 2, autonomous
+- [ ] 03-03-PLAN.md — Tracking infra em _meta/ (calibration seed + time-logging docs + Pomodoro integration), wave 2, autonomous
 
 ---
 
@@ -157,7 +178,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Fundação | 0/3 | Planned | - |
 | 2. Templates + Schema + Rubric | 0/4 | Planned | - |
-| 3. Dashboard + Queries + Tracking | 0/? | Not started | - |
+| 3. Dashboard + Queries + Tracking | 0/3 | Planned | - |
 | 4. Coach + Anti-Alucinação | 0/? | Not started | - |
 | 5. Análise Semanal/Mensal | 0/? | Not started | - |
 | 6. Extras (A-J) + Hardening | 0/? | Not started | - |
@@ -195,4 +216,4 @@ Estes constraints derivados da pesquisa aplicam-se durante o planning de cada ph
 
 ---
 
-*Last updated: 2026-04-24 after Phase 2 planning (4 plans defined, 22 requirements covered)*
+*Last updated: 2026-04-24 after Phase 3 planning (3 plans defined, 14 requirements covered)*
