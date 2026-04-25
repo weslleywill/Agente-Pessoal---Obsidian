@@ -1,7 +1,7 @@
 # STATE: Agente Pessoal Obsidian
 
 **Initialized:** 2026-04-23
-**Last updated:** 2026-04-23 after roadmap creation
+**Last updated:** 2026-04-25 after Phase 3 (dashboard + tracking) execution
 
 ---
 
@@ -9,7 +9,7 @@
 
 **Core Value:** Receber coaching real e sem achismo — priorização socrática, tracking calibrado por histórico, análise semanal/mensal fundamentada em livros — enquanto o sistema de capture (planner digital) tem fricção mínima.
 
-**Current Focus:** Roadmap criado. Próximo passo: `/gsd-plan-phase 1` para decompor Phase 1 (Fundação) em plans executáveis.
+**Current Focus:** Fases 1, 2, 2-UX e 3 concluídas (vault Obsidian + dashboard decomposto + tracking infra). Próximo passo: `/gsd-plan-phase 4` para decompor Phase 4 (Coach anti-alucinação + protocolo socrático) em plans executáveis. Antes: aguardando teste consolidado do usuário (Meta Bind sliders + dashboard).
 
 **Granularity:** Coarse (6 phases)
 **Mode:** YOLO
@@ -19,10 +19,10 @@
 
 ## Current Position
 
-**Phase:** 1 — Fundação (não iniciada)
-**Plan:** N/A (phase ainda não planejada)
-**Status:** Awaiting `/gsd-plan-phase 1`
-**Progress:** [▱▱▱▱▱▱] 0/6 phases complete
+**Phase:** 4 — Coach anti-alucinação + protocolo socrático (próxima a planejar)
+**Plan:** N/A (phase 4 ainda não planejada)
+**Status:** Awaiting `/gsd-plan-phase 4` (após teste do usuário das Fases 2-UX e 3)
+**Progress:** [▰▰▰▱▱▱] 3/6 phases complete (1, 2, 3 done; 2-UX micro-iteração)
 
 ---
 
@@ -33,9 +33,12 @@
 | v1 requirements total | 72 |
 | Requirements mapped | 72/72 (100%) |
 | Phases defined | 6 |
-| Phases completed | 0 |
-| Plans completed | 0 |
-| Current phase plans | TBD (awaiting planning) |
+| Phases completed | 3 (1, 2, 3) + 1 micro-iteração (2-UX) |
+| Plans completed | 8 (01-01, 02-01..04, 03-01..03) |
+| Requirements completed | ~50/72 (Fases 1, 2, 3) |
+| Current phase plans | TBD (awaiting `/gsd-plan-phase 4`) |
+| Plugins instalados | 11 (10 core + Meta Bind UX iteration) |
+| Threads abertos | 5 (1 alto valor crítico Fase 4) |
 
 ---
 
@@ -66,34 +69,39 @@
 
 ### Todos / pendências
 
-- [ ] Executar `/gsd-plan-phase 1` para decompor Fundação em plans
-- [ ] Validar escolha final Pomodoro Timer vs TaskNotes durante audit da Phase 1
-- [ ] Confirmar status Pentagrama/3Ps (research flagged) — decisão em Phase 2
+- [ ] **Aguardando teste do usuário** — Fase 2-UX (Meta Bind sliders) + Fase 3 (dashboards) consolidado em 1 reload Obsidian
+- [ ] Executar `/gsd-plan-phase 4` (Coach) — provavelmente requer research específica (grounding workflow + protocolo socrático)
+- [ ] Validar escolha final Pomodoro Timer vs TaskNotes (deferred — observar uso real)
+- [ ] Confirmar status Pentagrama/3Ps (research flagged — não foi encontrado no planner físico, tratar como narrativa)
+- [ ] Considerar `/gsd-extract_learnings` retroativo para Fases 2 e 3 (não têm SUMMARY próprio)
 
 ### Blockers
 
-Nenhum no momento.
+Nenhum no momento. Trabalho 100% sincronizado com GitHub (2 repos privados).
 
 ---
 
 ## Session Continuity
 
-### Última sessão (2026-04-23)
+### Última sessão (2026-04-23 → 2026-04-25, sprint maratona)
 
 **Ações executadas:**
-- PROJECT.md criado com core value, constraints, key decisions
-- REQUIREMENTS.md com 72 requirements em 10 categorias
-- Research completa: SUMMARY.md, STACK.md, ARCHITECTURE.md, PITFALLS.md
-- ROADMAP.md criado com 6 fases dependency-driven
-- STATE.md inicializado
-- Traceability em REQUIREMENTS.md atualizada
+- Fase 0: PROJECT.md, REQUIREMENTS.md, ROADMAP.md, research completa
+- Fase 1: vault `Agente Pessoal - Obsidian/` com 14 folders + 11 plugins + 2 repos GitHub privados
+- Fase 2: schema + rubric + fields + 5 templates + 5 fragments + rotinas + 52 frases + 3 livros seed
+- Fase 2-UX: Meta Bind 1.4.8 + sliders 0-5 + rotina editável inline (`tp.file.include`)
+- Fase 3: dashboard decomposto (Home leve + Semana-Atual + Mes-Atual pesados) + tracking infra (calibration + time-logging + tracking-integration)
+- 5 threads criados com aprendizados de plugin/arquitetura
+- MEMORY.md + session-logs/2026-04-25 documentando tudo
 
 **Próxima ação recomendada:**
 ```
-/gsd-plan-phase 1
+/gsd-plan-phase 4
 ```
 
-Decompõe Phase 1 (Fundação) em plans executáveis — instalação Obsidian + 10 plugins + Windows Registry + obsidian-git privado + skeleton folders + `_meta/` setup.
+Decompõe Phase 4 (Coach anti-alucinação + protocolo socrático) em plans executáveis — research necessária pra grounding workflow (Glob + Read em `08 - Livros/`), protocolo de 6 passos, comandos `/prepara meu dia` e `/loga`, friction budget, 2-modes detection.
+
+**ANTES de plan-phase 4:** aguardar usuário testar Fases 2-UX e 3 no Obsidian (1 reload + abrir Home + sliders na daily).
 
 ### Research flags ativas (para plan-phase)
 
