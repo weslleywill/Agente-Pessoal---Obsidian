@@ -70,6 +70,72 @@ Funciona com properties aninhadas tipo `pilares.competitividade`. Atualiza front
 
 **Pré-requisito:** valor inicial no frontmatter precisa ser `0` ou número (não `null` — slider não consegue posicionar marker em null).
 
+### Suggester com lista + texto livre (UX Iteration #2)
+
+```markdown
+`INPUT[suggester(option(A), option(B), option(C), allowOther):agenda_real.h06_00]`
+```
+
+- `allowOther` = usuário pode digitar texto livre além das opções (override)
+- Nested property `agenda_real.h06_00` funciona — confirmado via `Templates/TPL-Diario.md`
+- **Chaves YAML iniciando com dígito**: prefixar com letra (ex: `h` de "hora") pra evitar ambiguidade (parsers podem interpretar `06_00` como número/string inconsistente)
+- Sintaxe verificada na doc oficial: `https://www.moritzjung.dev/obsidian-meta-bind-plugin-docs/reference/inputfields/suggester/`
+
+---
+
+## 🔁 Auto-backup obsidian-git a cada 30min
+
+O plugin `obsidian-git` está configurado pra fazer commits automáticos a cada 30min com mensagem `vault backup: YYYY-MM-DD HH:MM:SS`.
+
+**Implicação prática:** quando faço Write em arquivos do vault, eles podem ser committados pelo backup automático ANTES do meu commit semântico. Resultado: `git status` pode mostrar "working tree clean" mesmo logo após editar — porque o backup já capturou.
+
+**Como mitigar:**
+- Sempre fazer commits semânticos com mensagem clara DEPOIS do trabalho — git aceita commits adicionais; o histórico fica `vault backup → vault backup → feat(...): semantic msg`
+- Em PRs/code review, filtrar commits "vault backup" do diff (são noise)
+- NÃO precisa desligar auto-backup — é a estratégia de defesa contra perda de dados
+
+---
+
+## 🎨 Pré-instalar tema Obsidian via curl (sem Settings UI)
+
+Pra reduzir fricção do teste do usuário, dá pra baixar tema diretamente do GitHub e setar como ativo via `.obsidian/appearance.json`. Validado com Minimal v8.1.7 (kepano) e AnuPpuccin v1.5.0 (Anubis).
+
+**Pattern:**
+```bash
+mkdir -p .obsidian/themes/<Nome>/
+curl -sL https://raw.githubusercontent.com/<owner>/<repo>/<branch>/manifest.json -o .obsidian/themes/<Nome>/manifest.json
+curl -sL https://raw.githubusercontent.com/<owner>/<repo>/<branch>/theme.css -o .obsidian/themes/<Nome>/theme.css
+```
+
+**Setar tema ativo + ativar snippets em `.obsidian/appearance.json`:**
+```json
+{
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": ["sliders", "polimento-geral"]
+}
+```
+
+**Atenção:** sempre verificar `manifest.json.minAppVersion` vs versão Obsidian instalada. Se incompatível, tema não carrega silenciosamente.
+
+**Repos confirmados:**
+- Minimal: `kepano/obsidian-minimal` (branch `master`)
+- AnuPpuccin: `AnubisNekhet/AnuPpuccin` (branch `main`)
+
+---
+
+## 🎨 CSS Obsidian: `accent-color` funciona em sliders nativos
+
+Pra dar feedback visual de fill no `<input type="range">` (Meta Bind sliders), basta:
+```css
+input[type="range"] {
+  accent-color: var(--interactive-accent);
+}
+```
+
+CSS-only, sem JS. Funciona porque Obsidian roda em Electron moderno (Chromium recente). Antes da iteração #2, eu pensava que precisava de gradient manual via `linear-gradient(to right, ...)` com JS pra atualizar `--value` — desnecessário.
+
+**Snippet aplicado:** `.obsidian/snippets/sliders.css` (ativado via `appearance.json`).
+
 ---
 
 ## 🔒 Anti-alucinação estrutural — case "Cabeça de Campeão"
@@ -106,4 +172,4 @@ Vault em `.gitignore` do parent → evita nested git issues. Cada repo tem respo
 
 ---
 
-*Atualizado: 2026-04-25 após Phase 3 concluída.*
+*Atualizado: 2026-04-26 após UX Iteration #2 concluída (suggester allowOther + temas pré-instalados + snippets ativados via appearance.json + CSS accent-color em sliders nativos + nota sobre auto-backup obsidian-git).*

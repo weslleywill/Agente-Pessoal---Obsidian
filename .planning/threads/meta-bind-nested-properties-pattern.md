@@ -1,9 +1,9 @@
 ---
 slug: meta-bind-nested-properties-pattern
-title: Meta Bind sliders aceitam properties aninhadas — init com 0 (não null)
+title: Meta Bind nested properties — sliders + suggester com allowOther + prefixo h em chaves YAML numéricas
 status: resolved
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 # Thread: Meta Bind nested properties pattern
@@ -65,6 +65,61 @@ Slider escolhido pra pilares 0-5 por: visual + tátil (arrastar é mais convidat
 
 - **Excluded folders**: configurar `excludedFolders: ["Templates"]` no `data.json` impede Meta Bind de processar templates como notas reais (senão aparece warning)
 - **syncInterval: 200**: 200ms é o sweet spot — atualiza frontmatter perceptivelmente em tempo real sem laggar
+
+---
+
+## Extensão UX-Iteration-2 (2026-04-26): suggester com allowOther + chaves YAML numéricas
+
+Aplicado em `agenda_real` (rotina interativa por bloco de horário) — 18 campos `INPUT[suggester]` no `TPL-Diario.md`.
+
+### Sintaxe `INPUT[suggester]` com texto livre
+
+```markdown
+`INPUT[suggester(option(Acordar - higiene), option(Acordar + alongar 5min), option(Acordar + meditar 10min), allowOther):agenda_real.h06_00]`
+```
+
+**Argumentos chave:**
+- `option(<texto>)` inline — quantos quiser, separados por vírgula
+- `allowOther` — flag-only (sem valor). **Permite usuário digitar texto livre além das opções**. Sem `allowOther`, suggester é rígido: só escolha da lista
+- Bind target nested funciona igual ao slider: `agenda_real.h06_00`
+
+### Prefixo `h` em chaves YAML iniciando com dígito (CRÍTICO)
+
+Chaves YAML que começam com dígito (ex: `06:00`, `06_00`) são **inseguras** entre parsers:
+- YAML 1.2 trata `06_00` como número com `_` separador (legível como `600`)
+- Alguns parsers viram string, outros viram int, outros falham
+- Aspas (`"06:00":`) resolve mas Meta Bind precisa lidar com chave com `:`
+
+**Solução adotada:** prefixo `h` (de "hora") em todas as chaves de horário:
+
+```yaml
+agenda_real:
+  h06_00: "Acordar, higiene"
+  h06_30: "Hidratação + exercício leve"
+  h22_30: "Dormir"
+```
+
+Convenção snake_case mantida (consistente com resto do schema). Sem ambiguidade entre parsers.
+
+### Comparação suggester vs. alternativas (atualização da tabela)
+
+| Tipo de input | Sintaxe | Permite texto livre? | UX |
+|---|---|---|---|
+| Slider | `INPUT[slider(minValue(0), maxValue(5), addLabels):X]` | N/A (numérico) | Arrastável |
+| Number | `INPUT[number(minValue(0), maxValue(12)):X]` | N/A (numérico) | Campo |
+| Toggle | `INPUT[toggle:X]` | N/A (bool) | On/off |
+| InlineSelect | `INPUT[inlineSelect(option(A), option(B)):X]` | ❌ Não | Dropdown inline |
+| Suggester | `INPUT[suggester(option(A), option(B), allowOther):X]` | ✅ Com `allowOther` | Modal fuzzy search + texto livre |
+
+`suggester` escolhido pra `agenda_real` porque: (1) lista contextual de sugestões por horário, (2) permite override com texto livre via `allowOther`, (3) escolha salva em frontmatter pra análise downstream (Phase 4-5 coach).
+
+### References adicionais (UX-Iteration-2)
+
+- Doc oficial suggester: https://www.moritzjung.dev/obsidian-meta-bind-plugin-docs/reference/inputfields/suggester/
+- Exemplo confirmado: `https://github.com/mProjectsCode/obsidian-meta-bind-plugin/blob/master/exampleVault/Input Fields/Suggester.md`
+- Aplicado em: `Agente Pessoal - Obsidian/Templates/TPL-Diario.md` (seção "## ⏰ Horários do dia (interativo)")
+- Frontmatter consumidor: `agenda_real.{h06_00...h22_30}` (18 chaves)
+- Commit: `63d6cff feat(ux-iteration-2): rotina interativa + sliders/UI polidos + frases pt-BR`
 
 ## References
 
